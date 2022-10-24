@@ -21,3 +21,4 @@ Para crear repositorios primero tendremos que crearnos una cuenta
 ![](https://docs.github.com/assets/cb-49938/images/help/repository/initialize-with-readme.png)
 1. Una vez hecho eso confirmamos la creacion en el botón de la imagen
 ![](https://docs.github.com/assets/cb-19887/images/help/repository/create-repository-button.png)
+https://docs.github.com/es/get-started/quickstart/create-a-repo
