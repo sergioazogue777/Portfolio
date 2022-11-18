@@ -96,7 +96,7 @@ Para que nos aparezca el archivo con nuestro nombre deberemos de crear ese mismo
 ```
 DirectoryIndex nombreDelArchivo.html
 ```  
-Para comprobar que funciona deberemos de introducir el nombre que le hemos dado en la barra de búsqueda de un navegador. Imprimirá el documento que le hemos indicado en _DirectoryIndex_.  
+Para comprobar que funciona deberemos de introducir el nombre que le hemos dado, en la barra de búsqueda de un navegador. Imprimirá el documento que le hemos indicado en _DirectoryIndex_.  
 
 ## Bibliografía  
 Tutorial de Apache:  [enlace](https://stackoverflow.com/questions/19322345/how-do-i-change-the-default-index-page-in-apache)
