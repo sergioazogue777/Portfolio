@@ -4,11 +4,12 @@ En este documento se redactará la resolución de los ejercicios del examen del 
 Describiremos los pasos a seguir para conectarse a un equipo externo y decargar una imagen en una carpeta que hayamos creado. Además, en nuestro propio equipo, deberemos modificar un fichero para que, accediendo mediante una ip dada, muestre una web que contengamos en nuestro equipo.  
   
 ## Índice
-1. Ejercicio 2: SSH  
-1. Ejercicio 3: Command line  
-1. Ejercicio 4: VirtualHost  
-1. Bibliografía  
-1. Conclusiones  
+* Ejercicios
+  1. Ejercicio 2: SSH  
+  1. Ejercicio 3: Command line  
+  1. Ejercicio 4: VirtualHost  
+* Bibliografía  
+* Conclusiones  
 ## Ejercicios  
 ### Ejercicio 2
 Para acceder mediante ssh a un equipo primero debemos comprobar que tenemos ssh. Para instalarlo ejecutaremos el siguiente comando:  
@@ -95,6 +96,8 @@ Para que nos aparezca el archivo con nuestro nombre deberemos de crear ese mismo
 ```
 DirectoryIndex nombreDelArchivo.html
 ```  
+Para comprobar que funciona deberemos de introducir el nombre que le hemos dado en la barra de búsqueda de un navegador. Imprimirá el documento que le hemos indicado en _DirectoryIndex_.  
+
 ## Bibliografía  
 Tutorial de Spache:  [enlace](https://stackoverflow.com/questions/19322345/how-do-i-change-the-default-index-page-in-apache)
   
