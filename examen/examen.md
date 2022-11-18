@@ -104,4 +104,6 @@ Tutorial de Apache:  [enlace](https://stackoverflow.com/questions/19322345/how-d
 ## Conclusiones 
 SSH nos ha ayudado a acceder a los directorios de un equipo remoto, además de operar con el con funciones como descargas de internet, crear directorios y ficheros.  
   
-A su vez también se ha demostrado la funcionalidad del archivo _hosts_ y lo sencillo que podemos hacer el acceso a un servidor sin necesidad de estar poniendo su dirección IP.
+A su vez también se ha demostrado la funcionalidad del archivo _hosts_ y lo sencillo que podemos hacer el acceso a un servidor sin necesidad de estar poniendo su dirección IP. 
+  
+El único fallo que me ha surgido ha sido a la hora de que mostrase el archivo que habia creado cuando hacia la búsqueda en el navegador de mi servidor. Para ello he requerido la web que indico en la bibliografía para añadir el módulo con el que indicamos el archivo que abrirá cuando se acceda al servidor mediante HTTP.
