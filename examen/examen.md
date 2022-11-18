@@ -99,7 +99,7 @@ DirectoryIndex nombreDelArchivo.html
 Para comprobar que funciona deberemos de introducir el nombre que le hemos dado en la barra de búsqueda de un navegador. Imprimirá el documento que le hemos indicado en _DirectoryIndex_.  
 
 ## Bibliografía  
-Tutorial de Spache:  [enlace](https://stackoverflow.com/questions/19322345/how-do-i-change-the-default-index-page-in-apache)
+Tutorial de Apache:  [enlace](https://stackoverflow.com/questions/19322345/how-do-i-change-the-default-index-page-in-apache)
   
 ## Conclusiones 
 SSH nos ha ayudado a acceder a los directorios de un equipo remoto, además de operar con el con funciones como descargas de internet, crear directorios y ficheros.  
