@@ -1,13 +1,14 @@
 # Examen  
 Por **Sergio Azogue**  
-En este documento se redactará la resolución de los ejercicios del examen del primer timestre. Se realizaran en un equipo todos los ejercicios, a excepción del SSH el cual requerirá un ordenador externo al que conectarse.  
-Describiremos los pasos a seguir para conectarse a un equipo externo y decargar una imagen en el en una carpeta que hayamos creado. Además, en nuestro propio equipo, deberemos modificar un fichero para que accediendo mediante una ip dada, muestre una web que contengamos en nuestro equipo.  
+En este documento se redactará la resolución de los ejercicios del examen del primer timestre. Se realizarán en un equipo todos los ejercicios, a excepción del SSH el cual requerirá un ordenador externo al que conectarse.  
+Describiremos los pasos a seguir para conectarse a un equipo externo y decargar una imagen en una carpeta que hayamos creado. Además, en nuestro propio equipo, deberemos modificar un fichero para que, accediendo mediante una ip dada, muestre una web que contengamos en nuestro equipo.  
   
-## Indice
+## Índice
 1. Ejercicio 2: SSH  
 1. Ejercicio 3: Command line  
 1. Ejercicio 4: VirtualHost  
-1. Bibliografía
+1. Bibliografía  
+1. Conclusiones  
 ## Ejercicios  
 ### Ejercicio 2
 Para acceder mediante ssh a un equipo primero debemos comprobar que tenemos ssh. Para instalarlo ejecutaremos el siguiente comando:  
@@ -28,7 +29,7 @@ Para comprobar que hemos cambiado de usuario podemos ejecutar el siguiente coman
 ```
 whoami
 ```  
-Lo siguiente que nos pide es acceder a la carpeta /var/www y crear una carpeta llamada como nuestro nombre. Para acceder a dicha carpeta usaremos el siguiente comando:  
+Lo siguiente que nos pide es acceder a la carpeta _/var/www_ y crear una carpeta llamada como nuestro nombre. Para acceder a dicha carpeta usaremos el siguiente comando:  
 ```
 cd /var/www
 ```  
@@ -86,13 +87,18 @@ En ese caso he usado la dirección loopback para que acceda a mi propio equipo p
 ```
 hostname -I
 ```  
-Con el que la dirección que usariamos es diferente:  
+Con el que la dirección que usaremos es diferente:  
 ```
 192.168.0.138       daw.ejercicio4.com
 ```  
-Para que nos aparezca el archivo con nuestro nombre deberemos de crear ese mismo archivo dentro de la carpeta donde se encuentre el serverRoot en el archivo de configuración de Apache. Además de añadir el siguiente modulo con el que al acceder a la IP se abrirá automaticamente:  
+Para que nos aparezca el archivo con nuestro nombre deberemos de crear ese mismo archivo dentro de la carpeta donde se encuentre el serverRoot en el archivo de configuración de Apache. Además de añadir el siguiente módulo con el que al acceder a la IP se abrirá automaticamente:  
 ```
 DirectoryIndex nombreDelArchivo.html
 ```  
-
-
+## Bibliografía  
+Tutorial de Spache:  [enlace](https://stackoverflow.com/questions/19322345/how-do-i-change-the-default-index-page-in-apache)
+  
+## Conclusiones 
+SSH nos ha ayudado a acceder a los directorios de un equipo remoto, además de operar con el con funciones como descargas de internet, crear directorios y ficheros.  
+  
+A su vez también se ha demostrado la funcionalidad del archivo _hosts_ y lo sencillo que podemos hacer el acceso a un servidor sin necesidad de estar poniendo su dirección IP.
