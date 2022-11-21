@@ -1,1 +1,2 @@
-3. [Instalación y configuración de Apache](https://github.com/sergioazogue777/Portfolio/blob/main/ejercicios/apacheIntroduccion.md): Archivo donde se describe con comandos y lineas de texto como instalar y configurar un sevridor web apache en nuestro propio equipo.
+1. [Instalación y configuración de Apache](https://github.com/sergioazogue777/Portfolio/blob/main/ejercicios/apacheIntroduccion.md): Archivo donde se describe con comandos y lineas de texto como instalar y configurar un sevridor web apache en nuestro propio equipo.
+2. [Instalacion y configuración de tomcat](https://github.com/sergioazogue777/Portfolio/blob/main/ejercicios/tomcat.md): En este documento se describe la instalación y configuración del servidor web tomcat. Además de como gestionarlo.
