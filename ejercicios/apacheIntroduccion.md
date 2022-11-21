@@ -1,6 +1,7 @@
 # Instalación y configuración de apache
-resumen  
-Palabras clave:
+>Por Sergio Azogue  
+
+En este archivo veremos como instalar apache y configurarlo para que podamos acceder a nuestro servidor con la dirección que nosotros le indiquemos en la configuración desde el terminal de ubuntu.
 
 ## Introducción  
 La instalación se llevará a cabo en un equipo con un sistema Ubuntu 20.04. Instalaremos Apache, un software de servidor web HTTP con el que podremos alojar nuestra web. Es el más usado del mundo. Una alternativa podría ser miniweb.  
@@ -102,3 +103,39 @@ Y lo editaremos con el siguiente:
 ```
 sudo nano index.html
 ```  
+A continuación vamos a editar el archivo de configuración de Apache. Para ello vamos al directorio donde se encuentra con el siguiuente comando:  
+```
+cd /etc/apache2/sites-available/
+```  
+Apache viene con un arhcivo de configuración por defecto el cual usaremos de base para configurar uno nuevo. Para empezar haremos una copia del documento con otro nombre con el siguiente comando:  
+```
+sudo cp 000-default.conf gci.conf
+```  
+Y procedemos a editarlo con:  
+```
+sudo nano gci.conf
+```  
+Deberiamos de tener nuestro correo en la linea de _ServerAdmin_:  
+```
+ServerAdmin nuestroCorreo@gmail.com
+```  
+Además, debemos de editar la linea _DocumentRoot_ para que nuestra web apunte al directorio correcto donde se encuentren nuestras páginas de tal forma:  
+```
+DocumentRoot /var/www/gci
+```  
+El archivo de configuración por defecto no viene con la linea _ServerName_ por lo que se la añadiremos:  
+```
+ServerName gci.ejemplo.com
+```  
+Tras configurarlo, debemos activar el archivo de configuración ejecutando el siguiente comando en el directorio donde se encuentran los archivos de configuración:  
+```
+sudo a2ensite gci.conf
+```  
+Nos devolverá un mensaje indicando que debemos ejecutar un _reload_ para que se active por lo que ejecutaremos lo siguiente:  
+```
+sudo service apache2 reload
+```  
+Nuestra web ya deberia de funcionar.
+![](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/7d6944922296826f70f27ec9b5eff67bd7f46158.png)  
+## Bibliografía:  
+https://ubuntu.com/tutorials/install-and-configure-apache#3-creating-your-own-website
